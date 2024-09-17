@@ -1,0 +1,360 @@
+.container {
+    width: 100%;
+    height: 100dvh;
+    /*background-image: linear-gradient(to right, #f3b07c, #fcd283);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container.clear, .container.default-bg {
+    background-image: linear-gradient(
+            90deg,
+            hsl(26deg 83% 72%) 0%,
+            hsl(27deg 84% 72%) 8%,
+            hsl(29deg 85% 72%) 17%,
+            hsl(30deg 86% 73%) 25%,
+            hsl(31deg 87% 73%) 33%,
+            hsl(32deg 88% 73%) 42%,
+            hsl(33deg 89% 74%) 50%,
+            hsl(34deg 90% 74%) 58%,
+            hsl(35deg 91% 74%) 67%,
+            hsl(36deg 92% 74%) 75%,
+            hsl(37deg 93% 75%) 83%,
+            hsl(38deg 94% 75%) 92%,
+            hsl(39deg 95% 75%) 100%
+    );
+}
+.container.clouds {
+    background-image: linear-gradient(
+            90deg,
+            hsl(179deg 59% 43%) 0%,
+            hsl(179deg 54% 46%) 8%,
+            hsl(179deg 50% 48%) 17%,
+            hsl(179deg 49% 51%) 25%,
+            hsl(179deg 51% 53%) 33%,
+            hsl(179deg 54% 56%) 42%,
+            hsl(179deg 57% 58%) 50%,
+            hsl(179deg 59% 60%) 58%,
+            hsl(179deg 63% 62%) 67%,
+            hsl(179deg 66% 64%) 75%,
+            hsl(179deg 70% 65%) 83%,
+            hsl(179deg 74% 67%) 92%,
+            hsl(179deg 79% 69%) 100%
+    );
+}
+.container.rain {
+    background-image: linear-gradient(
+            90deg,
+            hsl(199deg 95% 67%) 0%,
+            hsl(198deg 96% 68%) 8%,
+            hsl(198deg 96% 69%) 17%,
+            hsl(197deg 96% 69%) 25%,
+            hsl(196deg 97% 70%) 33%,
+            hsl(196deg 97% 71%) 42%,
+            hsl(195deg 97% 71%) 50%,
+            hsl(194deg 98% 72%) 58%,
+            hsl(193deg 98% 73%) 67%,
+            hsl(193deg 99% 73%) 75%,
+            hsl(192deg 99% 74%) 83%,
+            hsl(191deg 99% 75%) 92%,
+            hsl(190deg 100% 75%) 100%
+    );
+}
+
+.container.snow {
+    background-image: linear-gradient(
+            90deg,
+            hsl(190deg 100% 84%) 0%,
+            hsl(190deg 100% 86%) 8%,
+            hsl(190deg 100% 87%) 17%,
+            hsl(190deg 100% 89%) 25%,
+            hsl(190deg 100% 90%) 33%,
+            hsl(190deg 100% 92%) 42%,
+            hsl(191deg 100% 93%) 50%,
+            hsl(191deg 100% 94%) 58%,
+            hsl(191deg 100% 95%) 67%,
+            hsl(191deg 100% 97%) 75%,
+            hsl(191deg 100% 98%) 83%,
+            hsl(191deg 100% 99%) 92%,
+            hsl(0deg 0% 100%) 100%
+    );
+}
+
+.container.haze, .container.mist {
+    background-image: linear-gradient(
+            90deg,
+            hsl(179deg 61% 59%) 0%,
+            hsl(179deg 62% 60%) 8%,
+            hsl(179deg 63% 61%) 17%,
+            hsl(179deg 64% 62%) 25%,
+            hsl(179deg 66% 62%) 33%,
+            hsl(179deg 67% 63%) 42%,
+            hsl(179deg 69% 64%) 50%,
+            hsl(179deg 70% 65%) 58%,
+            hsl(179deg 72% 66%) 67%,
+            hsl(179deg 73% 67%) 75%,
+            hsl(179deg 75% 67%) 83%,
+            hsl(179deg 77% 68%) 92%,
+            hsl(179deg 79% 69%) 100%
+    );
+}
+
+.weather-app {
+    width: 85vw;
+    max-width: 35rem;
+    height: 95dvh; /*65rem*;/
+    /*background-image: linear-gradient(to top, #f3b07c, #fcd283);*/
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: -3rem 1rem 6rem rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.weather-app.clear, .weather-app.default-bg {
+    background-image: linear-gradient(
+            320deg,
+            hsl(26deg 83% 72%) 0%,
+            hsl(27deg 84% 72%) 8%,
+            hsl(29deg 85% 72%) 17%,
+            hsl(30deg 86% 73%) 25%,
+            hsl(31deg 87% 73%) 33%,
+            hsl(32deg 88% 73%) 42%,
+            hsl(33deg 89% 74%) 50%,
+            hsl(34deg 90% 74%) 58%,
+            hsl(35deg 91% 74%) 67%,
+            hsl(36deg 92% 74%) 75%,
+            hsl(37deg 93% 75%) 83%,
+            hsl(38deg 94% 75%) 92%,
+            hsl(39deg 95% 75%) 100%
+    );
+}
+
+.weather-app.clouds {
+    background-image: linear-gradient(
+            320deg,
+            hsl(179deg 59% 43%) 0%,
+            hsl(179deg 54% 46%) 8%,
+            hsl(179deg 50% 48%) 17%,
+            hsl(179deg 49% 51%) 25%,
+            hsl(179deg 51% 53%) 33%,
+            hsl(179deg 54% 56%) 42%,
+            hsl(179deg 57% 58%) 50%,
+            hsl(179deg 59% 60%) 58%,
+            hsl(179deg 63% 62%) 67%,
+            hsl(179deg 66% 64%) 75%,
+            hsl(179deg 70% 65%) 83%,
+            hsl(179deg 74% 67%) 92%,
+            hsl(179deg 79% 69%) 100%
+    );
+}
+
+.weather-app.rain {
+    background-image: linear-gradient(
+            320deg,
+            hsl(199deg 95% 67%) 0%,
+            hsl(198deg 96% 68%) 8%,
+            hsl(198deg 96% 69%) 17%,
+            hsl(197deg 96% 69%) 25%,
+            hsl(196deg 97% 70%) 33%,
+            hsl(196deg 97% 71%) 42%,
+            hsl(195deg 97% 71%) 50%,
+            hsl(194deg 98% 72%) 58%,
+            hsl(193deg 98% 73%) 67%,
+            hsl(193deg 99% 73%) 75%,
+            hsl(192deg 99% 74%) 83%,
+            hsl(191deg 99% 75%) 92%,
+            hsl(190deg 100% 75%) 100%
+    );
+}
+
+.weather-app.snow {
+    background-image: linear-gradient(
+            320deg,
+            hsl(190deg 100% 84%) 0%,
+            hsl(190deg 100% 86%) 8%,
+            hsl(190deg 100% 87%) 17%,
+            hsl(190deg 100% 89%) 25%,
+            hsl(190deg 100% 90%) 33%,
+            hsl(190deg 100% 92%) 42%,
+            hsl(191deg 100% 93%) 50%,
+            hsl(191deg 100% 94%) 58%,
+            hsl(191deg 100% 95%) 67%,
+            hsl(191deg 100% 97%) 75%,
+            hsl(191deg 100% 98%) 83%,
+            hsl(191deg 100% 99%) 92%,
+            hsl(0deg 0% 100%) 100%
+    );
+}
+
+.weather-app.haze, .weather-app.mist {
+    background-image: linear-gradient(
+            320deg,
+            hsl(179deg 61% 59%) 0%,
+            hsl(179deg 62% 60%) 8%,
+            hsl(179deg 63% 61%) 17%,
+            hsl(179deg 64% 62%) 25%,
+            hsl(179deg 66% 62%) 33%,
+            hsl(179deg 67% 63%) 42%,
+            hsl(179deg 69% 64%) 50%,
+            hsl(179deg 70% 65%) 58%,
+            hsl(179deg 72% 66%) 67%,
+            hsl(179deg 73% 67%) 75%,
+            hsl(179deg 75% 67%) 83%,
+            hsl(179deg 77% 68%) 92%,
+            hsl(179deg 79% 69%) 100%
+    );
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.weather img {
+    /*margin-top: -9rem;*/
+    width: clamp(70vw,100% + 29.246vw,100vw);
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+.search__top {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.search__top i {
+    font-size: 2rem;
+    color: #2f2e57;
+    cursor: pointer;
+}
+
+.search__top div {
+    font-size: 1.6rem;
+    color: #484569;
+    letter-spacing: 0.1rem;
+}
+
+.search__bar {
+    position: relative;
+}
+
+.search__bar input {
+    width: 100%;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 0.2rem solid #676394;
+    border-radius: 3rem;
+    outline: none;
+    padding: 1rem 3rem 1rem 1rem;
+    font-size: 1.6rem;
+    color: #484569;
+}
+
+.search__bar input::placeholder {
+    font-size: 1.4rem;
+    color: #676394;
+    letter-spacing: 0.1rem;
+}
+
+.search__bar input:focus::placeholder {
+    color: transparent;
+}
+
+.search__bar i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: #2f2e57;
+    cursor: pointer;
+}
+
+.loader {
+    width: 5rem;
+    margin-top: 10rem;
+}
+
+.not-found {
+    font-size: 3rem;
+    color: #484569;
+    margin-top: 5rem;
+    text-shadow: -0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.weather__type {
+    position: absolute;
+    top: clamp(85%,-0.24593rem + 5.246vw,85%);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #484569;
+}
+
+.weather__temp {
+    position: absolute;
+    top: clamp(100%,-0.24593rem + 5.246vw,100%);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--h-title);
+    background-image: linear-gradient(to right, #2f2e57, #605d80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.weather-date {
+    position: absolute;
+    top: clamp(135%,-0.24593rem + 5.246vw,135%);
+    font-size: 1.6rem;
+    color: #484569;
+}
+
+.weather-data {
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    column-gap: 2rem;
+    padding: 0 2rem;
+}
+
+.weather-data > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.weather-data__name {
+    font-size: var(--text-l);
+    color: #605d80;
+}
+
+.weather-data i {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: -0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.weather-data__data {
+    font-size: var(--text-xl);
+    color: #2f2e57;
+}
